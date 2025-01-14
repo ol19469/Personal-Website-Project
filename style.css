@@ -10,7 +10,7 @@ body {
   background-color: green;
   box-shadow: 0 0 12px -2px black;
   padding: 0;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ nav {
   color: bisque;
   display: flex;
   height: 80px;
-  padding: 30px;
+  padding: 10px;
   justify-content: space-between;
 }
 
@@ -44,10 +44,12 @@ main {
   box-shadow: 0 0 12px -2px white;
   color: white;
   font-size: 25px;
-  display: block;
 }
+
 h2 {
   font-size: xxx-large;
+  padding: 5;
+  margin: 30px;
 }
 section {
   border-top: 1px solid #bbb;
@@ -64,6 +66,7 @@ h3 {
   font-size: xx-large;
   margin: 10px;
   padding: 25px;
+  border-bottom: 1px solid #bbb;
 }
 .about-section:nth-of-type(odd) > img {
   float: left;
@@ -76,5 +79,35 @@ h3 {
 }
 
 .about-section img {
+  height: 128px;
+}
+
+.empty {
+  width: 100px;
+  height: 50px;
+}
+.work_section {
+  background-color: black;
+  margin: 2em auto;
+  padding: 1em;
+  color: white;
+  width: calc(100% - 6em);
+}
+
+.work_section :nth-last-of-type(odd) > img {
+  width: 240px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  float: left;
+}
+
+.work_section :nth-last-of-type(even) > img {
+  width: 240px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  float: right;
+}
+
+.work_img {
   height: 128px;
 }

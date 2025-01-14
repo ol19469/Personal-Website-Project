@@ -8,6 +8,10 @@ html {
 
 body {
   background-color: green;
+  box-shadow: 0 0 12px -2px black;
+  padding: 0;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 a {
@@ -40,21 +44,37 @@ main {
   box-shadow: 0 0 12px -2px white;
   color: white;
   font-size: 25px;
+  display: block;
 }
 h2 {
   font-size: xxx-large;
 }
 section {
-  display: flex;
-  align-items: flex-start;
+  border-top: 1px solid #bbb;
 }
-section p {
-  flex: 1;
-  margin-right: 20px;
-  font-size: 30px;
-  height: auto;
-}
+
 .image-right img {
   max-width: 600px;
   height: auto;
+}
+#about-header {
+  font-size: xx-large;
+}
+h3 {
+  font-size: xx-large;
+  margin: 10px;
+  padding: 25px;
+}
+.about-section:nth-of-type(odd) > img {
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+.about-section:nth-of-type(even) > img {
+  float: right;
+  margin: 0 24px 24px 24px;
+}
+
+.about-section img {
+  height: 128px;
 }
